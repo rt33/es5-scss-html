@@ -1,0 +1,72 @@
+{
+  "extends": "airbnb-base",
+
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "module"
+  },
+
+  "env": {
+    "browser": true
+  },
+
+  "plugins": [
+    "import",
+    "dependencies"
+  ],
+
+  "globals": {
+    "jQuery": true,
+    "$": true
+  },
+
+  "rules": {
+    "no-var": "off",
+
+    //Possible Errors
+    "no-console": "error",
+    "no-unexpected-multiline": "error",
+
+    // Best Practices
+    "consistent-return": "off",
+    "class-methods-use-this": "off",
+    "dot-location": ["error", "property"],
+    "no-implicit-globals": "error",
+    "no-invalid-this": "error",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-unmodified-loop-condition": "error",
+    "no-useless-call": "error",
+
+    // Variables
+    "no-catch-shadow": "error",
+    "no-label-var": "error",
+    "no-shadow": "off",
+    "no-undef-init": "error",
+    "no-use-before-define": ["error", "nofunc"],
+    "no-unused-vars": ["error", { "args": "none" }],
+
+    // Node.js
+    "callback-return": "error",
+    "global-require": "off",
+    "no-path-concat": "error",
+
+    // Stylistic Issues
+    "linebreak-style": ["error", "unix"],
+    "no-plusplus": "off",
+    "semi": ["error", "never"],
+
+    // import
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "import/prefer-default-export": "off",
+
+    // dependencies
+    "dependencies/case-sensitive": "error",
+    "dependencies/no-cycles": "error",
+    "dependencies/no-unresolved": "error",
+
+    // coding styles
+    "max-len": ["error", 120]
+  }
+}
+
+

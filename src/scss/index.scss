@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@import "_variables";
+
+html {
+  color: $default-color;
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+}
+
+@mixin title {
+  background: $red 0 0 no-repeat;
+  color: $white;
+  text-align: center;
+}
+
+.heading--title__main {
+  @include title;
+
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 30px;
+}
+
+.heading--title__sub {
+  @include title;
+
+  padding: 10px 30px;
+}
