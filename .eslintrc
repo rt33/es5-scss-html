@@ -45,11 +45,6 @@
     "no-use-before-define": ["error", "nofunc"],
     "no-unused-vars": ["error", { "args": "none" }],
 
-    // Node.js
-    "callback-return": "error",
-    "global-require": "off",
-    "no-path-concat": "error",
-
     // Stylistic Issues
     "linebreak-style": ["error", "unix"],
     "no-plusplus": "off",

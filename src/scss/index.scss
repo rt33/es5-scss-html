@@ -9,6 +9,14 @@ html {
   line-height: $default-line-height;
 }
 
+.header--item {
+  color: $red;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+}
+
 @mixin title {
   background: $red 0 0 no-repeat;
   color: $white;
